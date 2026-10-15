@@ -22,27 +22,26 @@
   console.log("%c" + NAME_ART, nameStyle);
 
   console.log(
-    "%cHey! 👋 I'm Syed Ahmer Shah.\n\n" +
+    "%cHey! 👋 I'm Lamesa Bekele.\n\n" +
       "I'm a Full-Stack Developer and Software Engineering student passionate\n" +
       "about building clean, meaningful, and future-ready software.\n\n" +
       "This is my latest portfolio — go ahead and explore. Click around,\n" +
       "check out my projects, and see what I've been working on.\n\n" +
       "Found a bug or something that looks off? Please reach out right away —\n" +
-      "I genuinely appreciate every report. 📧  support@ahmershah.dev",
+      "I genuinely appreciate every report. 📧  olifman787@gmail.com",
     msgStyle,
   );
 
   console.log(
-    "%c🌐  https://ahmershah.dev\n" +
-      "💼  https://linkedin.com/in/syedahmershah\n" +
-      "🐙  https://github.com/ahmershahdev\n" +
-      "🐦  https://twitter.com/ahmershah29\n" +
-      "📧  support@ahmershah.dev",
+    "%c🌐  https://olifman.github.io\n" +
+      "🐙  https://github.com/olifman\n" +
+      "✈️  https://t.me/lambekele1916\n" +
+      "📧  olifman787@gmail.com",
     linkStyle,
   );
 
   console.log(
-    "%c© 2026 – Present Syed Ahmer Shah. All rights reserved.",
+    "%c© 2026 – Present Lamesa Bekele. All rights reserved.",
     copyStyle,
   );
 })();
