@@ -1,5 +1,5 @@
 const QUOTES = [
-  "And I can fight only for something that I love, love only what I respect, and respect only what I at least know. — Syed Ahmer Shah",
+  "And I can fight only for something that I love, love only what I respect, and respect only what I at least know.",
   "Anyone can deal with victory. Only the mighty can bear defeat.",
   "Think Thousand times before taking a decision But - After taking decison never turn back even if you get Thousand difficulties!",
   "The victor will never be asked if he told the truth.",

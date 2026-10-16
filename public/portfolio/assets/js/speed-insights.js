@@ -2,7 +2,7 @@
  * Vercel Speed Insights Integration
  * Initializes Speed Insights for performance monitoring
  */
-const PROD_HOSTS = new Set(["ahmershah.dev", "www.ahmershah.dev"]);
+const PROD_HOSTS = new Set(["olifman.github.io"]);
 
 function schedule(callback) {
   if ("requestIdleCallback" in window) {

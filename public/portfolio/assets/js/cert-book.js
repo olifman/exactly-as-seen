@@ -19,6 +19,13 @@ if (!certSection || !magScene || !elPrevBtn || !elNextBtn) {
 } else {
 initLightbox(magScene, () => filtered);
 
+document.querySelectorAll(".cert-tab-btn").forEach((btn) => {
+  const cat = btn.dataset.cat;
+  const n = cat === "all" ? CERTIFICATES.length : CERTIFICATES.filter((c) => c.category === cat).length;
+  const el = btn.querySelector(".cert-tab-count");
+  if (el) el.textContent = String(n);
+});
+
 function initBook(certs) {
   const $ = window.jQuery;
   const dims = getBookDimensions();
@@ -32,6 +39,23 @@ function initBook(certs) {
     } catch (_) {}
     oldMag.remove();
   }
+  magScene.querySelector(".cert-empty-state")?.remove();
+
+  if (!certs.length) {
+    $book = null;
+    const empty = document.createElement("div");
+    empty.className = "cert-empty-state";
+    empty.setAttribute("role", "status");
+    empty.style.cssText = "padding:3rem 1.5rem;text-align:center;border:1px dashed currentColor;border-radius:8px;opacity:.75;max-width:560px;width:100%;";
+    empty.innerHTML = '<i class="bi bi-award" style="font-size:2rem"></i><p class="mt-3 mb-0">Certificates coming soon.</p>';
+    magScene.insertBefore(empty, shadow);
+    document.getElementById("certCounter").textContent = "0 / 0";
+    document.getElementById("certDotNav").innerHTML = "";
+    elPrevBtn.disabled = true;
+    elNextBtn.disabled = true;
+    return;
+  }
+
 
   const mag = document.createElement("div");
   mag.id = "certMagazine";
