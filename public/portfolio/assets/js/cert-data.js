@@ -1,3 +1,7 @@
+// UNVERIFIED TEMPLATE CONTENT: all 13 entries below came from the original
+// template author (Syed Ahmer Shah) and do NOT belong to Lamesa Bekele.
+// Kept only so the Certificates section keeps working until real certificates
+// are provided. Backup: .backups/cert-data.template-backup.js
 export const CERTIFICATES = [
   {
     id: 1,
