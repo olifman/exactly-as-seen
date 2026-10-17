@@ -1,4 +1,4 @@
-import { CAT_ICONS } from "./cert-data.js";
+import { CAT_ICONS, CAT_LABELS } from "./cert-data.js";
 
 export function buildBlankPage() {
   return `<div class="cert-page cert-blank-page"></div>`;
@@ -24,7 +24,7 @@ export function buildInfoPage(cert, index, total) {
         <span class="cert-id-stamp">#${String(cert.id).padStart(3, "0")}</span>
       </div>
       <span class="cert-issuer-badge" style="color:${primary};border-color:${primary};background:${background}">
-        <i class="bi ${icon}"></i> ${cert.category.charAt(0).toUpperCase() + cert.category.slice(1)}
+        <i class="bi ${icon}"></i> ${CAT_LABELS[cert.category] || cert.category}
       </span>
       ${badge}
       <h3 class="cert-title-text">${cert.name}</h3>
@@ -32,12 +32,12 @@ export function buildInfoPage(cert, index, total) {
         <i class="bi bi-building" style="color:${primary}"></i> ${cert.issuer}
       </p>
       <div class="cert-skills-list">${skills}</div>
-      <a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer"
+      ${cert.credentialUrl ? `<a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer"
          class="cert-view-btn"
          style="color:${primary};border-color:${primary};background:${primary}15"
          aria-label="View credential for ${cert.name}">
         <i class="bi bi-arrow-up-right-square"></i> View Credential
-      </a>
+      </a>` : ""}
     </div>
   </div>`;
 }
@@ -78,7 +78,7 @@ export function buildCombinedPage(cert, index, total) {
         <span class="cert-id-stamp">#${String(cert.id).padStart(3, "0")}</span>
       </div>
       <span class="cert-issuer-badge" style="color:${primary};border-color:${primary};background:${background}">
-        <i class="bi ${icon}"></i> ${cert.category.charAt(0).toUpperCase() + cert.category.slice(1)}
+        <i class="bi ${icon}"></i> ${CAT_LABELS[cert.category] || cert.category}
       </span>
       ${badge}
       <h3 class="cert-title-text">${cert.name}</h3>
@@ -94,12 +94,12 @@ export function buildCombinedPage(cert, index, total) {
              aria-label="Zoom ${cert.name}">
         <span class="cert-zoom-hint"><i class="bi bi-zoom-in"></i> Click to zoom</span>
       </div>
-      <a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer"
+      ${cert.credentialUrl ? `<a href="${cert.credentialUrl}" target="_blank" rel="noopener noreferrer"
          class="cert-view-btn"
          style="color:${primary};border-color:${primary};background:${primary}15"
          aria-label="View credential for ${cert.name}">
         <i class="bi bi-arrow-up-right-square"></i> View Credential
-      </a>
+      </a>` : ""}
     </div>
   </div>`;
 }
