@@ -1,0 +1,169 @@
+[1mdiff --git a/public/portfolio/index.html b/public/portfolio/index.html[m
+[1mindex 69192a1..2610db8 100644[m
+[1m--- a/public/portfolio/index.html[m
+[1m+++ b/public/portfolio/index.html[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-<!DOCTYPE html>[m
+[32m+[m[32m﻿<!DOCTYPE html>[m
+ <html lang="en" dir="ltr">[m
+ [m
+ <head>[m
+[36m@@ -27,7 +27,7 @@[m
+   base-uri 'self';[m
+   upgrade-insecure-requests;">[m
+ [m
+[31m-  <title>lamesa bekele | SWE  & Full-Stack Developer</title>[m
+[32m+[m[32m  <title>My Portfolio</title>[m
+   <link rel="canonical" href="https://olifman.github.io/">[m
+   <meta name="google-site-verification" content="uoOGBFxYr8VvgPVjFVX5ETvoTDnXkzDsUMIidCoA2Q4" />[m
+   <meta name="msvalidate.01" content="DBE8A4FC14B77DA2C6490D2C6A1EA2E7" />[m
+[36m@@ -272,7 +272,7 @@[m
+           <div class="col-lg-6">[m
+             <div class="hero-sys-chip mb-4">[m
+               <span class="hero-chip-dot"></span>[m
+[31m-              <span>◈ Building things users love and developers politely judge.</span>[m
+[32m+[m[32m              <span>â—ˆ Building things users love and developers politely judge.</span>[m
+             </div>[m
+ [m
+             <header>[m
+[36m@@ -292,7 +292,7 @@[m
+               <div class="hero-bio-bar"></div>[m
+               <p class="text-secondary" style="line-height: 1.6;">[m
+                 A software engineering student crafting high-performance web experiences[m
+[31m-                with Laravel, JavaScript, and AI—focused on clean code, speed, and impact.[m
+[32m+[m[32m                with Laravel, JavaScript, and AIâ€”focused on clean code, speed, and impact.[m
+               </p>[m
+             </div>[m
+ [m
+[36m@@ -399,21 +399,21 @@[m
+               </div>[m
+ [m
+               <p class="mb-4 lead-custom">[m
+[31m-                Hi, I'm <strong class="text-neon-green">lamesa bekele ('lamesa' for short)</strong> — a Software Engineering student fueled by[m
+[32m+[m[32m                Hi, I'm <strong class="text-neon-green">lamesa bekele ('lamesa' for short)</strong> â€” a Software Engineering student fueled by[m
+                 curiosity and a love for building technology that matters.[m
+               </p>[m
+ [m
+               <p class="mb-4">[m
+                 My journey started at <strong class="text-info"> ambo schondery School</strong> and continued at[m
+                 <strong class="text-info">Superior College of Engineering</strong>, where I developed strong analytical[m
+[31m-                skills and discipline. Today, I’m pursuing a Bachelor's in Software Engineering at <abbr[m
+[32m+[m[32m                skills and discipline. Today, Iâ€™m pursuing a Bachelor's in Software Engineering at <abbr[m
+                   title="Hyderabad Institute of Technology and Management Sciences">HITMS</abbr> and a 3-Year Advanced[m
+                  in Software Engineering  from <strong class="text-danger">bule hora university</strong>.[m
+               </p>[m
+ [m
+               <p class="mb-4">[m
+                 This dual path bridges <span class="text-info">theory</span> and <span[m
+[31m-                  class="text-neon-green">real-world practice</span> — from programming, web development, and databases[m
+[32m+[m[32m                  class="text-neon-green">real-world practice</span> â€” from programming, web development, and databases[m
+                 to full software design. I leverage AI tools like <strong class="text-warning">GitHub Copilot</strong>[m
+                 and <strong class="text-warning">Cursor AI</strong> to streamline workflows and innovate faster.[m
+               </p>[m
+[36m@@ -439,7 +439,7 @@[m
+             <div class="timeline-content">[m
+               <h3 class="h5 mb-1 text-uppercase">HITMS</h3>[m
+               <div class="text-neon-blue mb-2 fw-bold">[m
+[31m-                Bachelor's in Software Engineering | <time datetime="2024-11">Nov 2024</time> — <time[m
+[32m+[m[32m                Bachelor's in Software Engineering | <time datetime="2024-11">Nov 2024</time> â€” <time[m
+                   datetime="2028-12">Dec 2028</time>[m
+               </div>[m
+               <p class="text-secondary mb-0">Focusing on modern development practices, algorithms, and system design in[m
+[36m@@ -452,7 +452,7 @@[m
+             <div class="timeline-content">[m
+               <h3 class="h5 mb-1 text-uppercase">bule hora university</h3>[m
+               <div class="text-neon-blue mb-2 fw-bold">[m
+[31m-                 | <time datetime="2025-08"></time> — <time datetime="2028-09"></time>[m
+[32m+[m[32m                 | <time datetime="2025-08"></time> â€” <time datetime="2028-09"></time>[m
+               </div>[m
+               <p class="text-secondary mb-0">i am-focused training specializing in full-stack programming[m
+                 and software architecture.</p>[m
+[36m@@ -464,7 +464,7 @@[m
+             <div class="timeline-content">[m
+               <h3 class="h5 mb-1 text-uppercase"></h3>[m
+               <div class="text-neon-blue mb-2 fw-bold">[m
+[31m-                 Pre-Engineering | <time datetime="2022-07">Jul 2023</time> — <time datetime="2024-07">Jul[m
+[32m+[m[32m                 Pre-Engineering | <time datetime="2022-07">Jul 2023</time> â€” <time datetime="2024-07">Jul[m
+                   2025</time>[m
+               </div>[m
+               <div class="badge bg-dark border border-neon-green text-neon-green mb-2">Grade: A (70.45%)</div>[m
+[36m@@ -606,7 +606,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/e7e2ae82-b276-43c4-811d-3cecc578fce9/student-system.png"[m
+[32m+[m[32m                src="assets/images/projects/student-system.png"[m
+                 onerror="this.onerror=null;this.src='assets/images/projects/placeholder.svg'"[m
+                 class="project-carousel-img"[m
+                 alt="Student Management System">[m
+[36m@@ -640,7 +640,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/265b2457-864b-43f5-afda-aebecc57b8a3/car-rental.png"[m
+[32m+[m[32m                src="assets/images/projects/car-rental.png"[m
+                 class="project-carousel-img"[m
+                 alt="Car Rental Management System">[m
+         </div>[m
+[36m@@ -654,7 +654,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/b7a24b87-98b9-4fb7-8d3b-269913ee58c4/cms.png"[m
+[32m+[m[32m                src="assets/images/projects/cms.png"[m
+                 class="project-carousel-img"[m
+                 alt="College Management System">[m
+         </div>[m
+[36m@@ -668,7 +668,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/1898c276-78e6-4200-a08c-695bf320d010/cv.png"[m
+[32m+[m[32m                src="assets/images/projects/cv.png"[m
+                 class="project-carousel-img"[m
+                 alt="CV Generator">[m
+         </div>[m
+[36m@@ -846,11 +846,11 @@[m
+             method="POST"[m
+             aria-label="Contact form"[m
+ [m
+[31m-            data-emailjs-service-id="YOUR_SERVICE_ID"[m
+[32m+[m[32m            data-emailjs-service-id="service_w5qcola"[m
+ [m
+[31m-            data-emailjs-template-id="YOUR_TEMPLATE_ID"[m
+[32m+[m[32m            data-emailjs-template-id="template_ihu05gj"[m
+ [m
+[31m-            data-emailjs-public-key="YOUR_PUBLIC_KEY">[m
+[32m+[m[32m            data-emailjs-public-key="Lamo3v_t6NqFwT5tn">[m
+ [m
+ [m
+             <div class="form-honeypot" aria-hidden="true">[m
+[36m@@ -1095,8 +1095,8 @@[m [mclass="social-icon">[m
+ [m
+ <div class="quote-text">[m
+ [m
+[31m-“And I can fight only for something that I love, love only what I respect,[m
+[31m-and respect only what I at least know.”[m
+[32m+[m[32mâ€œAnd I can fight only for something that I love, love only what I respect,[m
+[32m+[m[32mand respect only what I at least know.â€[m
+ [m
+ [m
+ [m
+[36m@@ -1113,7 +1113,7 @@[m [mand respect only what I at least know.”[m
+ [m
+ <p class="small text-uppercase tracking-widest mt-4">[m
+ [m
+[31m-&copy; 2026 —[m
+[32m+[m[32m&copy; 2026 â€”[m
+ <span class="text-neon-blue">[m
+ lamesa bekele[m
+ </span>.[m
+[36m@@ -1197,4 +1197,6 @@[m [mThe work is an enclosure.[m
+   <script type="module" src="assets/js/script.js" defer crossorigin="anonymous"></script>[m
+ </body>[m
+ [m
+[31m-</html>[m
+\ No newline at end of file[m
+[32m+[m[32m</html>[m
+[41m+[m
+[41m+[m

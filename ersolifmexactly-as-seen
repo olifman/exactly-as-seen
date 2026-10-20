@@ -1,0 +1,194 @@
+[1mdiff --git a/public/portfolio/index.html b/public/portfolio/index.html[m
+[1mindex 69192a1..b01a1e5 100644[m
+[1m--- a/public/portfolio/index.html[m
+[1m+++ b/public/portfolio/index.html[m
+[36m@@ -27,11 +27,11 @@[m
+   base-uri 'self';[m
+   upgrade-insecure-requests;">[m
+ [m
+[31m-  <title>lamesa bekele | SWE  & Full-Stack Developer</title>[m
+[32m+[m[32m  <title>Lamesa Bekele | SWE &amp; Full-Stack Developer</title>[m
+   <link rel="canonical" href="https://olifman.github.io/">[m
+   <meta name="google-site-verification" content="uoOGBFxYr8VvgPVjFVX5ETvoTDnXkzDsUMIidCoA2Q4" />[m
+   <meta name="msvalidate.01" content="DBE8A4FC14B77DA2C6490D2C6A1EA2E7" />[m
+[31m- [m
+[32m+[m
+ [m
+   <link rel="preconnect" href="https://fonts.googleapis.com">[m
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[36m@@ -129,7 +129,7 @@[m
+   }[m
+   </script>[m
+ [m
+[31m- [m
+[32m+[m
+   <!-- Vercel Web Analytics -->[m
+   <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>[m
+ </head>[m
+[36m@@ -199,7 +199,7 @@[m
+                 <li><a class="dropdown-item" href="#skills"><i class="fas fa-code-branch me-2"></i>Skills</a></li>[m
+                 <li><a class="dropdown-item" href="#projects"><i class="fas fa-project-diagram me-2"></i>Projects</a>[m
+                 </li>[m
+[31m-  [m
+[32m+[m
+                 </li>[m
+                 <li><a class="dropdown-item" href="#blog"><i class="bi bi-book me-2"></i>Blog Stack</a></li>[m
+                 <li><a class="dropdown-item" href="#social"><i class="fas fa-shield-alt me-2"></i>Signal Hub</a>[m
+[36m@@ -473,7 +473,7 @@[m
+             </div>[m
+           </article>[m
+ [m
+[31m-          [m
+[32m+[m
+ [m
+         </div>[m
+       </div>[m
+[36m@@ -600,13 +600,13 @@[m
+       </div>[m
+     </section>[m
+ [m
+[31m-    [m
+[32m+[m
+     <section id="projects" class="py-5 curtain-reveal" aria-labelledby="projects-heading">[m
+       <div class="project-slide active" data-index="0">[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/e7e2ae82-b276-43c4-811d-3cecc578fce9/student-system.png"[m
+[32m+[m[32m                src="assets/images/projects/student-system.png"[m
+                 onerror="this.onerror=null;this.src='assets/images/projects/placeholder.svg'"[m
+                 class="project-carousel-img"[m
+                 alt="Student Management System">[m
+[36m@@ -640,7 +640,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/265b2457-864b-43f5-afda-aebecc57b8a3/car-rental.png"[m
+[32m+[m[32m                src="assets/images/projects/car-rental.png"[m
+                 class="project-carousel-img"[m
+                 alt="Car Rental Management System">[m
+         </div>[m
+[36m@@ -654,7 +654,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/b7a24b87-98b9-4fb7-8d3b-269913ee58c4/cms.png"[m
+[32m+[m[32m                src="assets/images/projects/cms.png"[m
+                 class="project-carousel-img"[m
+                 alt="College Management System">[m
+         </div>[m
+[36m@@ -668,7 +668,7 @@[m
+     <div class="row align-items-center g-4 g-lg-5">[m
+         <div class="col-lg-6 project-img-col">[m
+             <img[m
+[31m-                src="/__l5e/assets-v1/1898c276-78e6-4200-a08c-695bf320d010/cv.png"[m
+[32m+[m[32m                src="assets/images/projects/cv.png"[m
+                 class="project-carousel-img"[m
+                 alt="CV Generator">[m
+         </div>[m
+[36m@@ -716,17 +716,12 @@[m
+               </span>[m
+             </div>[m
+ [m
+[31m-           [m
+[32m+[m
+             <div class="panel-body">[m
+               <p class="panel-section-label">// personal social media profiles</p>[m
+               <div class="social-grid">[m
+ [m
+[31m-                <a href="" target="_blank" rel="noopener noreferrer"[m
+[31m-                  class="social-card" aria-label="Personal Instagram profile for Lamesa Bekele">[m
+[31m-                  <div class="social-icon-wrap"><i class="bi bi-instagram" style="color:#E1306C;"></i></div>[m
+[31m-                  <span class="social-card-label">Instagram</span>[m
+[31m-                  <span class="social-username">olifman787@gmail.com</span>[m
+[31m-                </a>[m
+[32m+[m
+ [m
+                 <a href="https://www.facebook.com/profile.php?id=61574368026619" target="_blank" rel="noopener noreferrer" class="social-card"[m
+                   aria-label="Personal Facebook profile for Lamesa Bekele">[m
+[36m@@ -748,21 +743,11 @@[m
+                   <span class="social-username">lamesa bekele</span>[m
+                 </a>[m
+ [m
+[31m-                <a href="" target="_blank" rel="noopener noreferrer" class="social-card"[m
+[31m-                  aria-label="Personal X profile for Lamesa Bekele">[m
+[31m-                  <div class="social-icon-wrap"><i class="bi bi-twitter-x" style="color:#ffffff;"></i></div>[m
+[31m-                  <span class="social-card-label">X</span>[m
+[31m-                  <span class="social-username">olifman787@gmail.com</span>[m
+[31m-                </a>[m
+ [m
+[31m-                <a href="" target="_blank" rel="noopener noreferrer" class="social-card"[m
+[31m-                  aria-label="Personal TikTok profile for Lamesa Bekele">[m
+[31m-                  <div class="social-icon-wrap"><i class="bi bi-tiktok" style="color:#00f2ea;"></i></div>[m
+[31m-                  <span class="social-card-label">TikTok</span>[m
+[31m-                  <span class="social-username">olifman787@gmail.com</span>[m
+[31m-                </a>[m
+ [m
+[31m-      [m
+[32m+[m
+[32m+[m
+[32m+[m
+               </div>[m
+             </div>[m
+           </div>[m
+[36m@@ -770,7 +755,7 @@[m
+           <div class="social-panel professional-panel" id="social-professional" data-panel-accent="0, 240, 255">[m
+             <div class="panel-mesh"></div>[m
+             <div class="panel-scanlines"></div>[m
+[31m-            [m
+[32m+[m
+ [m
+             <div class="panel-terminal-bar">[m
+               <span class="terminal-dot td-red"></span>[m
+[36m@@ -846,11 +831,11 @@[m
+             method="POST"[m
+             aria-label="Contact form"[m
+ [m
+[31m-            data-emailjs-service-id="YOUR_SERVICE_ID"[m
+[32m+[m[32m            data-emailjs-service-id="service_w5qcola"[m
+ [m
+[31m-            data-emailjs-template-id="YOUR_TEMPLATE_ID"[m
+[32m+[m[32m            data-emailjs-template-id="template_ihu05gj"[m
+ [m
+[31m-            data-emailjs-public-key="YOUR_PUBLIC_KEY">[m
+[32m+[m[32m            data-emailjs-public-key="Lamo3v_t6NqFwT5tn">[m
+ [m
+ [m
+             <div class="form-honeypot" aria-hidden="true">[m
+[36m@@ -1091,20 +1076,9 @@[m [mclass="social-icon">[m
+ [m
+ [m
+ [m
+[31m-<div class="quote-container mt-4">[m
+[31m-[m
+[31m-<div class="quote-text">[m
+[31m-[m
+[31m-“And I can fight only for something that I love, love only what I respect,[m
+[31m-and respect only what I at least know.”[m
+ [m
+ [m
+ [m
+[31m-</div>[m
+[31m-[m
+[31m-</div>[m
+[31m-[m
+[31m-[m
+ [m
+ <hr class="w-25 mx-auto opacity-25 my-4">[m
+ [m
+[36m@@ -1185,7 +1159,7 @@[m [mThe work is an enclosure.[m
+     </div>[m
+   </div>[m
+ [m
+[31m-  [m
+[32m+[m
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>[m
+   <script src="assets/js/console.js" defer></script>[m
+   <script src="assets/js/bootstrap.bundle.min.js" defer></script>[m
+[36m@@ -1197,4 +1171,4 @@[m [mThe work is an enclosure.[m
+   <script type="module" src="assets/js/script.js" defer crossorigin="anonymous"></script>[m
+ </body>[m
+ [m
+[31m-</html>[m
+\ No newline at end of file[m
+[32m+[m[32m</html>[m
