@@ -7,6 +7,7 @@ import { initSocialHub } from "./social.js";
 import { initBlogStack } from "./blog-stack.js";
 import { initFxSettingsUI, getFxSettings } from "./settings.js";
 import { initThemeToggle } from "./theme.js";
+import { appendPublishedProjects } from './managed-projects.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   registerServiceWorker();
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(() => {
         initializeAnimations();
         initProjectCarousel();
+        appendPublishedProjects();
         initSocialHub();
         initBlogStack();
       });

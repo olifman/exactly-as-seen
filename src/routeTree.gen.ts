@@ -10,33 +10,96 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as AuthenticatedManagerRouteImport } from './routes/_authenticated/manager'
+import { Route as ApiPublicProjectsRouteImport } from './routes/api/public/projects'
+import { Route as ApiPublicProjectImageIdRouteImport } from './routes/api/public/project-image.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedManagerRoute = AuthenticatedManagerRouteImport.update({
+  id: '/manager',
+  path: '/manager',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const ApiPublicProjectsRoute = ApiPublicProjectsRouteImport.update({
+  id: '/api/public/projects',
+  path: '/api/public/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicProjectImageIdRoute = ApiPublicProjectImageIdRouteImport.update({
+  id: '/api/public/project-image/$id',
+  path: '/api/public/project-image/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/auth': typeof AuthRoute
+  '/manager': typeof AuthenticatedManagerRoute
+  '/api/public/projects': typeof ApiPublicProjectsRoute
+  '/api/public/project-image/$id': typeof ApiPublicProjectImageIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/auth': typeof AuthRoute
+  '/manager': typeof AuthenticatedManagerRoute
+  '/api/public/projects': typeof ApiPublicProjectsRoute
+  '/api/public/project-image/$id': typeof ApiPublicProjectImageIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
+  '/auth': typeof AuthRoute
+  '/_authenticated/manager': typeof AuthenticatedManagerRoute
+  '/api/public/projects': typeof ApiPublicProjectsRoute
+  '/api/public/project-image/$id': typeof ApiPublicProjectImageIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/auth'
+    | '/manager'
+    | '/api/public/projects'
+    | '/api/public/project-image/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/auth'
+    | '/manager'
+    | '/api/public/projects'
+    | '/api/public/project-image/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/_authenticated'
+    | '/auth'
+    | '/_authenticated/manager'
+    | '/api/public/projects'
+    | '/api/public/project-image/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
+  AuthRoute: typeof AuthRoute
+  ApiPublicProjectsRoute: typeof ApiPublicProjectsRoute
+  ApiPublicProjectImageIdRoute: typeof ApiPublicProjectImageIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +111,61 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/manager': {
+      id: '/_authenticated/manager'
+      path: '/manager'
+      fullPath: '/manager'
+      preLoaderRoute: typeof AuthenticatedManagerRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/api/public/projects': {
+      id: '/api/public/projects'
+      path: '/api/public/projects'
+      fullPath: '/api/public/projects'
+      preLoaderRoute: typeof ApiPublicProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/project-image/$id': {
+      id: '/api/public/project-image/$id'
+      path: '/api/public/project-image/$id'
+      fullPath: '/api/public/project-image/$id'
+      preLoaderRoute: typeof ApiPublicProjectImageIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedManagerRoute: typeof AuthenticatedManagerRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedManagerRoute: AuthenticatedManagerRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  AuthRoute: AuthRoute,
+  ApiPublicProjectsRoute: ApiPublicProjectsRoute,
+  ApiPublicProjectImageIdRoute: ApiPublicProjectImageIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
