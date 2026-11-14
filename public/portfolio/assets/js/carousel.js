@@ -1,5 +1,5 @@
 export function initProjectCarousel() {
-  const slides = document.querySelectorAll(".project-slide");
+  let slides = document.querySelectorAll("#projects .project-slide");
   const counter = document.getElementById("projectCounter");
   const prevBtn = document.getElementById("prevProject");
   const nextBtn = document.getElementById("nextProject");
@@ -9,7 +9,15 @@ export function initProjectCarousel() {
 
   let current = 0;
   let animating = false;
-  const total = slides.length;
+  let total = slides.length;
+  section?.addEventListener('projectsUpdated', () => {
+    const active = slides[current];
+    slides = document.querySelectorAll('#projects .project-slide');
+    total = slides.length;
+    current = Math.max(0, Array.from(slides).indexOf(active));
+    slides.forEach((slide, index) => slide.classList.toggle('active', index === current));
+    if (counter) counter.textContent = `${current + 1} / ${total}`;
+  });
 
   function triggerAnimation(slide) {
     slide.classList.remove("animate-in");
